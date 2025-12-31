@@ -2,14 +2,14 @@
   "name": "sign-to-approve",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Halleester.github.io/sign-to-approve",
+  "homepage": "http://halleester.github.io/sign-to-approve",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "hg-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "^14.2.33",
