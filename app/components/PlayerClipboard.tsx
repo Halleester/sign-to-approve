@@ -280,7 +280,7 @@ const PlayerClipboard: React.FC = ({  }) => {
           pointerEvents:'auto',
           width: "100%",
           height: "100%",
-          background: "url('./images/clipboard.png')",
+          background: "url('/images/clipboard.png')",
           borderRadius: "2vh",
           padding: "4.6vh 3.8vh",
           position: "relative",

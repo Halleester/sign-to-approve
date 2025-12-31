@@ -101,7 +101,7 @@ export default function ChecklistGame() {
               style={{
                 position:'absolute',
                 width:'140%',height:'102%',
-                backgroundImage:'url("./images/mat.jpg")',
+                backgroundImage:'url("/images/mat.jpg")',
                 backgroundSize:'100vh 100vh',
                 boxShadow:'inset 0 0 0.6vh 2vh #2b2b2b75',
                 top:'0',left:'-10%',

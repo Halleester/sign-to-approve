@@ -25,7 +25,7 @@ const SignatureReplayer: React.FC<SignatureReplayerProps> = ({ drawTime, onRepla
         const ctx = canvas.getContext('2d')!;
 
         const img = new Image();
-        img.src = "./images/pink-glitter.png";
+        img.src = "/images/pink-glitter.png";
         img.onload = () => { 
             patternRef.current = ctx.createPattern(img!, 'repeat');
             const matrix = new DOMMatrix();

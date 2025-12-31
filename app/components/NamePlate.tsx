@@ -48,7 +48,7 @@ const NamePlate: React.FC = ({  }) => {
     <div id='nameplate'
       style={{
         backgroundColor:'brown',
-        backgroundImage:"url('./images/wood.jpg')",
+        backgroundImage:"url('/images/wood.jpg')",
         backgroundSize:"cover",
         padding:'15px 25px',
         width:'100%',
