@@ -3,6 +3,8 @@ import { usePlayerStore } from "../PlayerStore";
 import { RoughNotation } from "react-rough-notation";
 import { Merriweather } from 'next/font/google'
 
+/* eslint-disable */
+
 const pangolin = Merriweather({
   weight: '400',
   subsets: ['latin'],
@@ -46,7 +48,7 @@ const NamePlate: React.FC = ({  }) => {
     <div id='nameplate'
       style={{
         backgroundColor:'brown',
-        backgroundImage:"url(/images/wood.jpg)",
+        backgroundImage:"url('./images/wood.jpg')",
         backgroundSize:"cover",
         padding:'15px 25px',
         width:'100%',

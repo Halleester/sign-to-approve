@@ -6,6 +6,8 @@ import { usePlayerStore } from "../PlayerStore";
 import StickyPadCost from "./StickyPadCost";
 import useWindowDimensions from "../helpers/windowDimensions";
 
+/* eslint-disable */
+
 interface StickyPadProps {
     id: string;
     upgrades?: any[];

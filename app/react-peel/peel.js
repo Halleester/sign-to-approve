@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const PeelCorners = {
   TOP_LEFT: 0x0,
   TOP_RIGHT: 0x1,

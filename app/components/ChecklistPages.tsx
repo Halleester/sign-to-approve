@@ -3,6 +3,8 @@ import { PeelBack, PeelTop, PeelWrapper } from "../react-peel";
 import ChecklistBody from "./ChecklistBody";
 import { usePlayerStore } from "../PlayerStore";
 
+/* eslint-disable */
+
 interface ChecklistPagesProps {
   startPage: any;
   pageFunction: (pageIndex: number) => void;

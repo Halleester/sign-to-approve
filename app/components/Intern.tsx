@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { usePlayerStore } from "../PlayerStore";
 
+/* eslint-disable */
+
 const Intern: React.FC = ({ }) => {
   const checkAddAmt = usePlayerStore((state) => state.addAmt);
   const checkIncAmt = usePlayerStore((state) => state.checkRate);

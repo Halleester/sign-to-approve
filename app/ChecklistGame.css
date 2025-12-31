@@ -28,7 +28,7 @@ body {
   -webkit-user-select: none;
   user-select: none;
   min-height: 100vh;
-  background-image: url("/images/wood_dark.jpg");
+  background-image: url("./images/wood_dark.jpg");
   margin: 0px;
 }
 h1 {

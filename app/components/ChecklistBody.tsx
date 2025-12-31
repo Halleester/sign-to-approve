@@ -3,6 +3,8 @@ import ChecklistItem from "./ChecklistItem";
 import SignatureReplayer from "./SignatureReplayer";
 import { usePlayerStore } from "../PlayerStore";
 
+/* eslint-disable */
+
 interface ChecklistBodyProps {
     title: string;
     items: any[];

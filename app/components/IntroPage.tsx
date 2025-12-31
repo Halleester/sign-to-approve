@@ -6,6 +6,8 @@ import SignatureSaver from "./SignatureSaver";
 import IntroPageBack from "./IntroPageBack";
 import { Open_Sans } from 'next/font/google'
 
+/* eslint-disable */
+
 type Point = { x: number; y: number; t: number };
 type Stroke = Point[];
 

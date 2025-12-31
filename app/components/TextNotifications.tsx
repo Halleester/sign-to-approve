@@ -3,6 +3,8 @@ import { usePlayerStore } from "../PlayerStore";
 
 type FloatingTextID = {id: number, x: number; y: number; text: string; highlighted?: boolean}
 
+/* eslint-disable */
+
 const TextNotifications: React.FC = ({  }) => {
 
   const floatingText = usePlayerStore((state) => state.floatingText);

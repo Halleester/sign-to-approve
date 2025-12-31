@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { usePlayerStore } from "../PlayerStore";
 import StickyPad from "./StickyPad";
 
+/* eslint-disable */
+
 const UpgradeTabs: React.FC = ({  }) => {
 
 

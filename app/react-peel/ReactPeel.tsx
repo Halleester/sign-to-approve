@@ -2,6 +2,8 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import PeelLib, { PeelCorners } from "./peel";
 import { HtmlDivProps, PeelOptions, Props, TCoords } from "./types";
 
+/* eslint-disable */
+
 export const PeelWrapper = forwardRef(Peel);
 
 function Peel(

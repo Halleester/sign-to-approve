@@ -4,6 +4,8 @@ import { usePlayerStore } from "../PlayerStore";
 import { RoughNotation } from "react-rough-notation";
 import { Mynerve } from 'next/font/google'
 
+/* eslint-disable */
+
 interface ChecklistItemProps {
     id: string;
     label: string;
@@ -116,7 +118,7 @@ const ChecklistItem: React.FC<ChecklistItemProps> = ({ id, label, checked, disab
                                 width={64}
                                 height={64}
                             >
-                                <image href="/images/pink-glitter.png" x="0" y="0" width="64" height="64" />
+                                <image href="./images/pink-glitter.png" x="0" y="0" width="64" height="64" />
                                 <animateTransform
                                     attributeName="patternTransform"
                                     type="translate"

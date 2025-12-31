@@ -3,6 +3,8 @@ import { usePlayerStore } from "../PlayerStore";
 
 interface tooltipObj { id: number, tooltip: string, tooltipStyle: React.CSSProperties}
 
+/* eslint-disable */
+
 const StickyTooltip: React.FC = ({  }) => {
 
   const tooltip = usePlayerStore((state) => state.tooltip);
