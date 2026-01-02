@@ -135,8 +135,27 @@ const SignatureReplayer: React.FC<SignatureReplayerProps> = ({ drawTime, onRepla
     //     svg.appendChild(xPathTwo);
     // }, []);
 
+    const [signScale, setSignScale] = useState<number>(1);
+    
+    // Window resizing logic
+    const [windowResized, setWindowResized] = useState<number>(0);
+    useEffect(() => {
+        function handleResize() {
+        setWindowResized((prev) => prev + 1);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        const currentViewportHeight = typeof window !== "undefined" ? window.innerHeight : 1080;
+        setSignScale(currentViewportHeight / 100 * 9.6 / 120);
+    }, [windowResized]);
+
     return (
-        <div style={{display: 'flex', justifyContent: 'center', position: 'relative', transformOrigin:'top center', transform:'scale(calc(9.6vh/120px))'}}>
+        <div style={{display: 'flex', justifyContent: 'center', position: 'relative', transformOrigin:'top center', transform:`scale(${signScale})`}}>
             <canvas 
                 ref={canvasRef}
                 width={360}

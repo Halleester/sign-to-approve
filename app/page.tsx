@@ -75,7 +75,7 @@ export default function ChecklistGame() {
             <div style={{height:'85%', alignContent:'center'}}>
               <div style={{ width:'72%', height:'90%', maxWidth:'90%', maxHeight: '120%', aspectRatio:'9/12', margin:'auto' }} className={introDone ? 'map-intro' : 'map-pre-intro'}>
                 <div className='letter' style={{width:'100%', height:'100%'}}>
-                  <p style={{textAlign:'center'}}>Goal: Get promoted to the highest position</p>
+                  <p style={{textAlign:'center',fontSize:'2.4vh'}}>Goal: Get promoted to the highest position</p>
                   <svg ref={svgRef} width={'90%'} height={'90%'} style={{margin:'auto'}}></svg>
                 </div>
               </div>

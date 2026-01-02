@@ -71,7 +71,7 @@ const ChecklistBody: React.FC<ChecklistBodyProps> = ({ title, items, onFinalChec
             />
           ))}
         </div>
-        <div ref={signParentRef} id='page-footer' style={{paddingBottom: '1.52vh', textAlign: 'center', position: 'absolute', bottom: '0', width: 'calc(100% - 4.56vh)', pointerEvents:isMain ? 'auto' : 'none'}}>
+        <div ref={signParentRef} id='page-footer' style={{paddingBottom: '1.52vh', textAlign: 'center', position: 'absolute', bottom: '0', left:'0', width: '100%', pointerEvents:isMain ? 'auto' : 'none'}}>
           <p style={{fontSize:'2.2vh'}}>Sign For Approval:</p>
           <SignatureReplayer drawTime={signatureTime} onReplayDone={onSignatureDone} refresh={refresh} />
           {/* <ChecklistItem

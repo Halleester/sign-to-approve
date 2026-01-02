@@ -210,7 +210,6 @@ const PlayerClipboard: React.FC = ({  }) => {
       { name: 'Add an extra week to the bug fix ETA', },
       { name: 'Turn it off and on again?', },
       { name: 'Plain text is a safe way to store passwords, right?', },
-      { name: 'Add an extra week to the bug fix ETA', },
     ]
   }
 

@@ -202,7 +202,7 @@ const IntroPage: React.FC<IntroPageProps> = ({ startDone = false }) => {
               
               <p className='intro-text-bottom'>
                 This really tiny text here is meant to make this document look really important and official. The vibe just wouldn't be the same without it, so here it is. The tiny text. There's reall no extra clauses or bad things that you're agreeing to because of this secation.
-                You can stop reading now. There's nothing else. Seriously, this is it. What else could we even put down here? Something like how we actually get legal rights to you brain the moment we fire you? Because we wouldn't do that. Not at all ha hahah ha.
+                You can stop reading now. There's nothing else. Seriously, this is it. What else could we even put down here? Something like how we actually get legal rights to your brain the moment we fire you? Because we wouldn't do that. Not at all ha hahah ha.
                 Ok you got us. We will own your brain. But like you obviously don't need that anyway if you're agreeing to this.
               </p>
             </PeelTop>

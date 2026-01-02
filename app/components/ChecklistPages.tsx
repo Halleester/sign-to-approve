@@ -83,18 +83,6 @@ const ChecklistPages: React.FC<ChecklistPagesProps> = ({ startPage, pageFunction
 
   const [refresh, doRefresh] = useState(0);
 
-  const [windowResized, setWindowResized] = useState<number>(0);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowResized((prev) => prev + 1);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <div id="both-pages" style={{transformOrigin: 'center'}} ref={bothRef}>
       <PeelWrapper

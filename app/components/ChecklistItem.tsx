@@ -105,11 +105,30 @@ const ChecklistItem: React.FC<ChecklistItemProps> = ({ id, label, checked, disab
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    const [boxScale, setBoxScale] = useState<number>(1);
+
+    // Window resizing logic
+    const [windowResized, setWindowResized] = useState<number>(0);
+    useEffect(() => {
+        function handleResize() {
+        setWindowResized((prev) => prev + 1);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        const currentViewportHeight = typeof window !== "undefined" ? window.innerHeight : 1080;
+        setBoxScale(currentViewportHeight / 100 * 3.8 / 50);
+    }, [windowResized]);
+
 
     return (
         <div key={id}>
             <div style={{display:"flex"}}>
-                <div style={{transform:'scale(calc(3.8vh/50px))', transformOrigin:'top center', height:'0'}}>
+                <div style={{transform:`scale(${boxScale})`, transformOrigin:'top center', height:'0'}}>
                     <svg ref={svgRef} width={checkBaseSize} height={checkBaseSize} onClick={!isChecked ? playCheckmark : undefined} style={{cursor: !isChecked ? 'pointer' : '', marginRight: '1.52vh'}} >
                         <defs>
                             <pattern
